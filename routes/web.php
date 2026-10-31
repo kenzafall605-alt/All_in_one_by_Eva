@@ -2,6 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route provisoire : sera protégée par l'authentification dans feature/auth-roles
+Route::view('/', 'dashboard')->name('dashboard');
